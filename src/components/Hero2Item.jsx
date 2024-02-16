@@ -35,14 +35,6 @@ const Hero2Item = ({ icon, title, text }) => {
           <span className="h-[4px] w-[4px] rounded-full bg-[#FF5F1F]"></span>
           <span className="h-[4px] w-[4px] rounded-full bg-[#FF5F1F]"></span>
         </div>
-        {/* <div className="flex items-center gap-2">
-          <span className="h-[4px] w-[4px] rounded-full bg-[#FF5F1F]"></span>
-          <span className="h-[4px] w-[4px] rounded-full bg-[#FF5F1F]"></span>
-          <span className="h-[4px] w-[4px] rounded-full bg-[#FF5F1F]"></span>
-          <span className="h-[4px] w-[4px] rounded-full bg-[#FF5F1F]"></span>
-          <span className="h-[4px] w-[4px] rounded-full bg-[#FF5F1F]"></span>
-          <span className="h-[4px] w-[4px] rounded-full bg-[#FF5F1F]"></span>
-        </div> */}
       </div>
     </div>
   );
