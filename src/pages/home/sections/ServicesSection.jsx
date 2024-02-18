@@ -9,7 +9,7 @@ import {
   TbCamera,
   TbChartDots2,
   TbMessageCircle2,
-  TbCode,
+  TbAtom,
 } from "react-icons/tb";
 
 const ServicesSection = () => {
@@ -48,7 +48,7 @@ const ServicesSection = () => {
     },
     {
       title: "Data Science",
-      icon: <TbCode />,
+      icon: <TbAtom />,
     },
   ];
   return (

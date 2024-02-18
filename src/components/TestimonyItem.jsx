@@ -6,7 +6,7 @@ const TestimonyItem = ({ commentaire, author, company }) => {
       <div className="text-6xl text-[#FF5F1F]  ">
         <BiSolidQuoteLeft />
       </div>
-      <div className="text-sm font-light"> {commentaire} </div>
+      <div className="text-sm font-light text-justify"> {commentaire} </div>
       <div className="pb-8">
         <div className="text-lg font-semibold"> {author} </div>
         <div className="text-sm font-extralight text-[#FF5F1F]">{company}</div>

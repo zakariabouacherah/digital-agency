@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [color, setColor] = useState(false);
@@ -14,11 +15,18 @@ const Navbar = () => {
     "hover:text-[#FF5F1F] border-transparent border-b-[2px] font-semibold hover:border-[#FF5F1F] transition ease-in duration-150 cursor-pointer";
   return (
     <nav
-      className={`fixed top-0 flex w-full items-center z-30 justify-between py-8 px-12  ${
+      className={`fixed top-0 flex w-full items-center z-30 justify-between py-2 md:py-4 md:px-12 px-6  ${
         color ? "backdrop-blur-md bg-[#44444471] shadow-md" : "bg-transparent"
       }`}
     >
-      <div>logo</div>
+      <Link to="/" className="w-[200px] ">
+        <img
+          src="../../../public/images/logo.png"
+          alt="datadriven"
+          width="100%"
+          className="w-full h-full object-contain"
+        />
+      </Link>
       <ul className="hidden lg:flex items-center gap-8">
         <li className={navItemStyle}>Home</li>
         <li className={navItemStyle}>About</li>

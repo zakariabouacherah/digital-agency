@@ -41,13 +41,13 @@ const Projects = () => {
   ];
   return (
     <div className="flex flex-col gap-6 px-8 md:px-16 lg:px-32">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-start flex-col md:flex-row md:items-center gap-2">
         <Heading subTitle="our completed projects" title="Recent Projects" />
         <Button label="All Projects" />
       </div>
       <div>
         <Swiper
-          slidesPerView={1}
+          slidesPerView={1.3}
           spaceBetween={30}
           modules={[Pagination]}
           pagination={{
@@ -55,13 +55,13 @@ const Projects = () => {
           }}
           breakpoints={{
             514: {
-              slidesPerView: 2,
+              slidesPerView: 2.3,
             },
             640: {
-              slidesPerView: 3,
+              slidesPerView: 3.3,
             },
             840: {
-              slidesPerView: 4,
+              slidesPerView: 4.3,
             },
           }}
           loop

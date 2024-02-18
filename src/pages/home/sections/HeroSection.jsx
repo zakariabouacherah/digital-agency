@@ -10,14 +10,14 @@ const Hero = () => {
           backgroundImage: 'url("../../../public/images/heroSectionBg.png")',
         }}
       >
-        <div className="flex flex-col gap-4 w-full lg:w-[50%]">
+        <div className="flex flex-col gap-6 w-full lg:w-[50%]">
           <h1 className="text-5xl font-semibold relative">
             <span className="relative z-10">
               Trusted Digital <br /> agency
             </span>
             <span className="absolute top-0 left-0 bg-[#FF5F1F] w-[20px] h-full  z-0"></span>
           </h1>
-          <p className="text-sm opacity-85 font-light">
+          <p className="text-sm opacity-85 font-light hidden lg:block">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
             obcaecati maiores, iusto odit dignissimos quis! Sit? Lorem ipsum
             dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur

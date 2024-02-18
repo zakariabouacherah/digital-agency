@@ -8,11 +8,18 @@
   height: 4px;
   background-color: #fff !important;
   opacity: 1;
-  border-radius: 20px;
+  border-radius: 0px;
+  margin: 0 !important;
+}
+.swiper-pagination-bullet:first-of-type {
+  border-radius: 20px 0 0 20px;
+}
+.swiper-pagination-bullet:last-of-type {
+  border-radius: 0 20px 20px 0;
 }
 .swiper-pagination-bullet-active {
   background-color: #ff5f1f !important;
-  width: 16px !important;
+  width: 20px !important;
 }
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
