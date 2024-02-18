@@ -3,6 +3,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Services from "./pages/services/Services";
 import Navbar from "./components/Navbar";
+import "./App.css";
 
 function App() {
   return (

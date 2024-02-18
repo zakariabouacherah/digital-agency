@@ -2,7 +2,7 @@ import Br from "./Br";
 
 const Hero2Item = ({ icon, title, text }) => {
   return (
-    <div className="bg-[#fff2] relative px-6 py-10 rounded-sm w-[400px] w-max-[460px] ">
+    <div className="bg-[#fff2] relative px-6 py-20 rounded-sm w-[300px] w-max-[100%] lg:w-full ">
       <div className="flex flex-col gap-2 relative">
         <span className="text-4xl text-[#FF5F1F]"> {icon} </span>
         <div className="mb-3">

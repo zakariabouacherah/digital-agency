@@ -1,0 +1,25 @@
+.parent:hover .child {
+  background-color: #fff;
+}
+.child {
+  transition: all ease 100ms;
+}
+.swiper-pagination-bullet {
+  height: 4px;
+  background-color: #fff !important;
+  opacity: 1;
+  border-radius: 20px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ff5f1f !important;
+  width: 16px !important;
+}
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, -2px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}

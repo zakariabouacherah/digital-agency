@@ -3,14 +3,18 @@ import { useState } from "react";
 const Navbar = () => {
   const [color, setColor] = useState(false);
   const changeColor = () => {
-    setColor(window.screenY >= 76);
+    if (window.scrollY >= 76) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
   };
-  window.addEventListener("scroll", setColor);
+  window.addEventListener("scroll", changeColor);
   const navItemStyle =
-    "hover:text-[#FF5F1F] border-transparent hover:border-b-[1px]  hover:border-[#FF5F1F] transition ease-in duration-150 cursor-pointer";
+    "hover:text-[#FF5F1F] border-transparent border-b-[2px] font-semibold hover:border-[#FF5F1F] transition ease-in duration-150 cursor-pointer";
   return (
     <nav
-      className={`fixed top-0 flex bg-slate-400 w-full items-center justify-between py-8 px-12  ${
+      className={`fixed top-0 flex w-full items-center z-30 justify-between py-8 px-12  ${
         color ? "backdrop-blur-md bg-[#44444471] shadow-md" : "bg-transparent"
       }`}
     >

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="h-[70vh] h-max-screen flex bg-contain lg:bg-cover bg-no-repeat bg-right lg:bg-center items-center lg:justify-start justify-center px-8 md:px-16 lg:px-32"
+        className="h-[70vh] h-max-screen flex bg-contain lg:bg-contain bg-no-repeat bg-right lg:bg-center items-center lg:justify-start justify-center px-8 md:px-16 lg:px-32"
         style={{
           backgroundImage: 'url("../../../public/images/heroSectionBg.png")',
         }}
