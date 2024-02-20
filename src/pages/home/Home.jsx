@@ -1,6 +1,7 @@
 import Separation from "../../components/Separation";
 import AboutSection from "./sections/AboutSection";
 import BlogSection from "./sections/BlogSection";
+import Contact from "./sections/Contact";
 import HeroBottom from "./sections/HeroBottom";
 import Hero from "./sections/HeroSection";
 import Newsletter from "./sections/Newsletter";
@@ -27,6 +28,8 @@ const Home = () => {
       <Team />
       <Newsletter />
       <BlogSection />
+      <Separation />
+      <Contact />
       <Separation />
     </>
   );

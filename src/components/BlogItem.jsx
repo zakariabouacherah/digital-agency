@@ -1,7 +1,7 @@
 const BlogItem = ({ date, title, imageUrl }) => {
   return (
     <div className="flex flex-col items-center overflow-hidden cursor-pointer">
-      <div className="w-full h-[300px] z-0 ">
+      <div className="w-full h-[300px] z-0 overflow-hidden">
         <img
           src={imageUrl}
           alt={title}

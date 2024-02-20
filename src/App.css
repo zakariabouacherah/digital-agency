@@ -30,3 +30,14 @@
   left: 0;
   width: 100%;
 }
+
+.scroll-to-top {
+  background-color: #ff5f1f !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 111 !important;
+  width: 30px !important;
+  height: 30px !important;
+}
