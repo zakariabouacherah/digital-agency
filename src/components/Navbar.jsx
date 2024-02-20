@@ -44,7 +44,7 @@ const Navbar = () => {
       <ul
         className={`${
           isOpen ? "top-0 left-0   " : "left-[-1000px] "
-        } h-[80vh] w-screen absolute bg-black lg:bg-transparent  flex flex-col justify-center lg:h-auto lg:w-auto lg:relative lg:flex lg:flex-row lg:top-0 items-center gap-8 transition-all duration-700 ease-out`}
+        } h-[80vh] w-screen absolute bg-black lg:bg-transparent  flex flex-col justify-center lg:h-auto lg:w-auto lg:relative lg:flex lg:flex-row lg:left-0 items-center gap-8 transition-all duration-700 ease-out`}
       >
         <li className={navItemStyle}>Home</li>
         <li className={navItemStyle}>About</li>
