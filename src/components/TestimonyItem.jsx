@@ -2,7 +2,7 @@ import { BiSolidQuoteLeft } from "react-icons/bi";
 
 const TestimonyItem = ({ commentaire, author, company }) => {
   return (
-    <div className="w-full flex flex-col gap-4">
+    <div className="w-full flex flex-col gap-4 bg-black">
       <div className="text-6xl text-[#FF5F1F]  ">
         <BiSolidQuoteLeft />
       </div>

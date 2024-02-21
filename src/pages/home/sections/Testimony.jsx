@@ -3,21 +3,22 @@ import { PiPlayCircleDuotone } from "react-icons/pi";
 import TestimonyItem from "../../../components/TestimonyItem";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
 const Testimony = () => {
   const commentaires = [
     {
       commentaire:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veniam harum officia, sit repellendus deleniti facere! Vitae ullam ipsa suscipit illo aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veniam harum officia, sit repellendus deleniti facere! Vitae ullam ipsa suscipit illo aspernatur",
+        "Nunc eget neque eros. Duis sed elit sit amet neque iaculis mattis. In convallis tortor id iaculis sagittis. Vivamus id ligula commodo, aliquam nisl sit amet, consequat lacus. Vestibulum imperdiet pellentesque justo at sodales. Maecenas interdum mattis risus, id molestie lectus euismod vestibulum.",
       company: "Founder of POPO",
       author: "Brahim Ouali",
     },
     {
       commentaire:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veniam harum officia, sit repellendus deleniti facere! Vitae ullam ipsa suscipit illo aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veniam harum officia, sit repellendus deleniti facere! Vitae ullam ipsa suscipit illo aspernatur",
+        "Fusce eleifend magna ex, sed fringilla mauris rhoncus iaculis. Nunc tristique ante lacinia, lobortis metus sed, tincidunt risus. Vivamus dictum rutrum tellus, accumsan rutrum nulla ornare at. Nulla facilisi. Etiam eget rutrum nunc. Integer iaculis nulla ut gravida egestas. ",
       company: "RH of Yalla",
       author: "Aicha Aloua",
     },
@@ -45,10 +46,11 @@ const Testimony = () => {
                 delay: 6000,
                 disableOnInteraction: false,
               }}
+              effect={"fade"}
               pagination={{
                 clickable: true,
               }}
-              modules={[Autoplay, Pagination]}
+              modules={[Autoplay, Pagination, EffectFade]}
               loop
             >
               {commentaires.map((item, index) => (
