@@ -9,17 +9,17 @@ const Br = ({ vertical }) => {
       }`}
     >
       <span
-        className={`bg-[#FF5F1F] rounded-md  ${
+        className={`bg-[#FF5F1F] rounded-md children  ${
           vertical ? "w-full h-[60%]" : "w-[60%] h-full"
         } `}
       ></span>
       <span
-        className={`bg-[#FF5F1F] rounded-md  ${
+        className={`bg-[#FF5F1F] rounded-md children ${
           vertical ? "w-full h-[10%]" : "w-[10%] h-full"
         } `}
       ></span>
       <span
-        className={`bg-[#FF5F1F] rounded-md  ${
+        className={`bg-[#FF5F1F] rounded-md children ${
           vertical ? "w-full h-[30%]" : "w-[30%] h-full"
         } `}
       ></span>
