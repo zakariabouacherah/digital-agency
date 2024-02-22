@@ -1,6 +1,6 @@
 const ProjectItem = ({ image, service, secteur }) => {
   return (
-    <div className="bg-[#fff3] p-0 w-[100%]  overflow-hidden rounded-md mb-8 ">
+    <div className="bg-[#fff3] p-0 w-[100%]  overflow-hidden mb-8 ">
       <div className="w-full h-[200px] ">
         <img
           src={image}

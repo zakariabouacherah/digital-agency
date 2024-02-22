@@ -1,11 +1,11 @@
 const Member = ({ image, name, secteur }) => {
   return (
-    <div className="relative p-0 w-[100%]  overflow-hidden rounded-md mb-8 par">
+    <div className="relative p-0 w-[100%]  overflow-hidden mb-8 par">
       <div className="relative w-full h-[360px] md:h-[300px] ">
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover img"
+          className="w-full h-full object-cover saturate-50 img"
         />
       </div>
       <div className="absolute -bottom-24 left-0 w-full flex flex-col items-center justify-center gap-1 p-4 bg-[#0008] chi ">
