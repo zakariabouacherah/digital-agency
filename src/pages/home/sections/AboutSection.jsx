@@ -58,7 +58,7 @@ const AboutSection = () => {
             />
           </div>
           <div className="absolute right-6 bottom-6">
-            <Button label="More About Us" icon={<FaArrowRight />} />
+            <Button label="More About Us" icon={<FaArrowRight />} to="/about" />
           </div>
         </div>
       </div>

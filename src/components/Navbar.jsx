@@ -1,11 +1,13 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import NavItem from "./NavItem";
 
 const Navbar = () => {
   const [color, setColor] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
   const changeColor = () => {
-    if (window.scrollY >= 76) {
+    if (window.scrollY >= 86) {
       setColor(true);
     } else {
       setColor(false);
@@ -14,14 +16,22 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-  console.log(isOpen);
   window.addEventListener("scroll", changeColor);
-  const navItemStyle =
-    "hover:text-[#FF5F1F] border-transparent border-b-[2px] font-semibold hover:border-[#FF5F1F] transition ease-in duration-150 cursor-pointer";
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
+  // const navItemStyle = `hover:text-[#FF5F1F]  border-transparent border-b-[2px] font-semibold hover:border-[#FF5F1F] transition ease-in duration-150 cursor-pointer`;
+  // const avtiveNavItem = `${
+  //   isHomePage ? "text-[#FF5F1F] border-b-[#FF5F1F]" : ""
+  // }`;
   return (
     <nav
-      className={`fixed top-0 flex w-full items-center z-30 justify-between py-2 md:py-4 md:px-12 px-6  ${
-        color ? "backdrop-blur-md bg-[#44444471] shadow-md" : "bg-transparent"
+      className={` flex w-full items-center z-30 justify-between py-2 md:py-4 md:px-12 px-6 transition-all ease-in duration-300 ${
+        color
+          ? "backdrop-blur-md bg-[#44444471] shadow-md fixed top-0"
+          : "bg-transparent relative"
       }`}
     >
       <Link to="/" className="w-[200px] z-20 ">
@@ -41,20 +51,36 @@ const Navbar = () => {
         ""
       )}
 
-      <ul
+      <div
         className={`${
           isOpen ? "top-0 left-0   " : "left-[-1000px] "
         } h-[80vh] w-screen absolute bg-black lg:bg-transparent  flex flex-col justify-center lg:h-auto lg:w-auto lg:relative lg:flex lg:flex-row lg:left-0 items-center gap-8 transition-all duration-700 ease-out`}
       >
-        <li className={navItemStyle}>Home</li>
-        <li className={navItemStyle}>About</li>
-        <li className={navItemStyle}>Services</li>
-        <li className={navItemStyle}>Projects</li>
-        <li className={navItemStyle}>Clients</li>
-        <li className={navItemStyle}>Teams</li>
-        <li className={navItemStyle}>Blog</li>
-        <li className={navItemStyle}>Contact</li>
-      </ul>
+        <NavItem to="/" currentPath={location.pathname}>
+          Home
+        </NavItem>
+        <NavItem to="/about" currentPath={location.pathname}>
+          About
+        </NavItem>
+        <NavItem to="/services" currentPath={location.pathname}>
+          Services
+        </NavItem>
+        <NavItem to="/projects" currentPath={location.pathname}>
+          Projects
+        </NavItem>
+        <NavItem to="/clients" currentPath={location.pathname}>
+          Clients
+        </NavItem>
+        <NavItem to="/team" currentPath={location.pathname}>
+          Team
+        </NavItem>
+        <NavItem to="/blog" currentPath={location.pathname}>
+          Blog
+        </NavItem>
+        <NavItem to="/contact" currentPath={location.pathname}>
+          Contact
+        </NavItem>
+      </div>
       <div
         className="relative w-[25px] h-[25px] cursor-pointer lg:hidden"
         onClick={toggleNavbar}

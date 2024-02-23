@@ -89,3 +89,35 @@
     filter: saturate(0);
   }
 }
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0008;
+}
+
+.navItem::after,
+.navItem2::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  background-color: #ff5f1f;
+  border-radius: 4px;
+  transition: all ease 0.3s;
+}
+.navItem2::before {
+  width: 25px;
+}
+.navItem::after {
+  width: 0%;
+}
+
+.navItem:hover::after {
+  width: 25px;
+}

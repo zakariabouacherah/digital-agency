@@ -1,6 +1,9 @@
-const Button = ({ label, icon, small, outline }) => {
+import { Link } from "react-router-dom";
+
+const Button = ({ label, icon, to, small, outline }) => {
   return (
-    <button
+    <Link
+      to={to}
       className={`py-3 px-4 bg-[#FF5F1F] text-sm flex items-center justify-center gap-2 rounded-sm hover:bg-[#d54e19] ${
         small ? "text-sm py-1 px-2" : ""
       }
@@ -10,7 +13,7 @@ const Button = ({ label, icon, small, outline }) => {
     >
       <span> {label} </span>
       <span> {icon} </span>
-    </button>
+    </Link>
   );
 };
 

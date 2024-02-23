@@ -6,6 +6,7 @@ import {
   TbBrandLinkedin,
   TbBrandInstagram,
 } from "react-icons/tb";
+import { useEffect } from "react";
 
 const Footer = () => {
   const smStyle =
@@ -13,7 +14,7 @@ const Footer = () => {
   return (
     <>
       <ScrollToTop smooth top={800} color="white" width="18" height="18" />
-      <footer className=" px-8 md:px-16 lg:px-32 bg-[#fff2] -mt-16 pt-8 pb-6">
+      <footer className={` px-8 md:px-16 lg:px-32 bg-[#fff2] -mt-16 pt-8 pb-6`}>
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="lg:w-[50%] ">
             <img
