@@ -28,10 +28,10 @@ const Navbar = () => {
   // }`;
   return (
     <nav
-      className={` flex w-full items-center z-30 justify-between py-2 md:py-4 md:px-12 px-6 transition-all ease-in duration-300 ${
+      className={` flex w-full items-center  z-30 justify-between py-2 md:py-4 md:px-12 px-6 transition-all ease-in duration-300 ${
         color
           ? "backdrop-blur-md bg-[#44444471] shadow-md fixed top-0"
-          : "bg-transparent relative"
+          : "bg-transparent absolute "
       }`}
     >
       <Link to="/" className="w-[200px] z-20 ">
@@ -53,8 +53,10 @@ const Navbar = () => {
 
       <div
         className={`${
-          isOpen ? "top-0 left-0   " : "left-[-1000px] "
-        } h-[80vh] w-screen absolute bg-black lg:bg-transparent  flex flex-col justify-center lg:h-auto lg:w-auto lg:relative lg:flex lg:flex-row lg:left-0 items-center gap-8 transition-all duration-700 ease-out`}
+          isOpen
+            ? "top-0 left-0 opacity-100   "
+            : "top-[-1000px] left-0 opacity-0 "
+        } h-[80vh] w-screen absolute bg-black lg:bg-transparent  flex flex-col justify-center lg:h-auto lg:w-auto lg:relative lg:flex lg:flex-row lg:opacity-100 lg:top-0 items-center gap-8 transition-all duration-500 ease-in`}
       >
         <NavItem to="/" currentPath={location.pathname}>
           Home

@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import Member from "../../../components/Member";
 
-const Team = () => {
+const Team = ({ withoutButton }) => {
   const membres = [
     {
       imageUrl:
@@ -49,7 +49,7 @@ const Team = () => {
     <div className="flex flex-col gap-6 px-8 md:px-16 lg:px-32">
       <div className="flex justify-between items-start flex-col md:flex-row md:items-center gap-2">
         <Heading subTitle="meet our experts" title="Our Team" />
-        <Button label="View All" />
+        {withoutButton ? "" : <Button label="View All" />}
       </div>
       <div>
         <Swiper

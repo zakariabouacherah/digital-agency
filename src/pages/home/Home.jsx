@@ -10,26 +10,60 @@ import Projects from "./sections/Projects";
 import ServicesSection from "./sections/ServicesSection";
 import Team from "./sections/Team";
 import Testimony from "./sections/Testimony";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <Hero />
       <HeroBottom />
-      <Separation />
-      <AboutSection />
-      <Separation />
-      <ServicesSection />
-      <Separation />
-      <Projects />
-      <Separation />
-      <Testimony />
-      <Partners />
-      <Team />
-      <Newsletter />
-      <BlogSection />
-      <Separation />
-      <Contact />
+      <div data-aos="fade-up">
+        <Separation />
+      </div>
+      <div data-aos="fade-up">
+        <AboutSection />
+      </div>
+      <div data-aos="fade-up">
+        <Separation />
+      </div>
+      <div data-aos="fade-up">
+        <ServicesSection />
+      </div>
+      <div data-aos="fade-up">
+        <Separation />
+      </div>
+      <div data-aos="fade-up">
+        <Projects />
+      </div>
+      <div data-aos="fade-up">
+        <Separation />
+      </div>
+      <div data-aos="fade-up">
+        <Testimony />
+      </div>
+      <div data-aos="fade-up">
+        <Partners />
+      </div>
+      <div data-aos="fade-up">
+        <Team withoutButton />
+      </div>
+      <div data-aos="fade-up">
+        <Newsletter />
+      </div>
+      <div data-aos="fade-up">
+        <BlogSection />
+      </div>
+      <div data-aos="fade-up">
+        <Separation />
+      </div>
+      <div data-aos="fade-up">
+        <Contact />
+      </div>
       <Separation />
     </>
   );

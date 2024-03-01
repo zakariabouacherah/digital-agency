@@ -1,8 +1,21 @@
 import Br from "./Br";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
-const Hero2Item = ({ icon, title, text }) => {
+const Hero2Item = ({ icon, title, text, delay }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <div className="parent bg-[#fff2] relative px-6 py-20 rounded-sm w-[300px] w-max-[100%] lg:w-full hover:bg-[#ff5f1f]  transition-all">
+    <div
+      data-aos="fade-up"
+      data-aos-delay={delay}
+      className="parent bg-[#fff2] relative px-6 py-20 rounded-sm w-[300px] w-max-[100%] lg:w-full hover:bg-[#ff5f1f]  transition-all"
+    >
       <div className="flex flex-col gap-2 relative">
         <span className="children1 text-4xl text-[#FF5F1F]"> {icon} </span>
         <div className="mb-3">

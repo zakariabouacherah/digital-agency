@@ -9,18 +9,21 @@ const BlogSection = () => {
       title: "Tools to help you easily create proposals",
       imageUrl:
         "https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg",
+      delay: 200,
     },
     {
       date: "13 January",
       title: "The Outlook for digital agencies in 4 Charts",
       imageUrl:
         "https://images.pexels.com/photos/6340689/pexels-photo-6340689.jpeg",
+      delay: 400,
     },
     {
       date: "16 January",
       title: "The 13 Best Time Tracking Apps of 2023",
       imageUrl:
         "https://images.pexels.com/photos/2422293/pexels-photo-2422293.jpeg",
+      delay: 600,
     },
   ];
   return (
@@ -35,6 +38,7 @@ const BlogSection = () => {
             imageUrl={item.imageUrl}
             date={item.date}
             title={item.title}
+            delay={item.delay}
             key={index}
           />
         ))}

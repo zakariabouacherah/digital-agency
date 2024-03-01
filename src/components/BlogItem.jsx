@@ -1,6 +1,17 @@
-const BlogItem = ({ date, title, imageUrl }) => {
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+const BlogItem = ({ date, title, imageUrl, delay }) => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
-    <div className="flex flex-col items-center overflow-hidden cursor-pointer">
+    <div
+      data-aos="fade-up"
+      data-aos-delay={delay}
+      className="flex flex-col items-center overflow-hidden cursor-pointer"
+    >
       <div className="w-full h-[300px] z-0 overflow-hidden">
         <img
           src={imageUrl}
