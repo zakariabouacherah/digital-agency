@@ -2,16 +2,19 @@ import { FaArrowRight } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-const ServiceItem = ({ icon, title, delay }) => {
+const ServiceItem = ({ icon, title, delay, onClick }) => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div
+    <Link
+      to={`/services/${title.toLowerCase().replace(/\s/g, "-")}`}
       data-aos="fade-up"
       data-aos-delay={delay}
       className="parent flex items-center justify-between bg-[#fff3] py-3 px-2 w-[300px] md:w-[100%] min-w-[260px]  rounded-s-full cursor-pointer hover:bg-[#FF5F1F] transition ease-in duration-100 "
+      onClick={onClick}
     >
       <div className="flex items-center gap-4">
         <div className="child rounded-full bg-[#0008] flex items-center justify-center w-[55px] h-[55px] ">
@@ -22,7 +25,7 @@ const ServiceItem = ({ icon, title, delay }) => {
       <div className="text-lg">
         <FaArrowRight />
       </div>
-    </div>
+    </Link>
   );
 };
 

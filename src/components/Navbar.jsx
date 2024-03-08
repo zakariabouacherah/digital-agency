@@ -34,7 +34,7 @@ const Navbar = () => {
           : "bg-transparent absolute "
       }`}
     >
-      <Link to="/" className="w-[200px] z-20 ">
+      <Link to="/home" className="w-[200px] z-20 ">
         <img
           src="../../../public/images/logo.png"
           alt="datadriven"
@@ -58,7 +58,7 @@ const Navbar = () => {
             : "top-[-1000px] left-0 opacity-0 "
         } h-[80vh] w-screen absolute bg-black lg:bg-transparent  flex flex-col justify-center lg:h-auto lg:w-auto lg:relative lg:flex lg:flex-row lg:opacity-100 lg:top-0 items-center gap-8 transition-all duration-500 ease-in`}
       >
-        <NavItem to="/" currentPath={location.pathname}>
+        <NavItem to="/home" currentPath={location.pathname}>
           Home
         </NavItem>
         <NavItem to="/about" currentPath={location.pathname}>

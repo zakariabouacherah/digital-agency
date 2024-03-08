@@ -5,18 +5,25 @@ import Services from "./pages/services/Services";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Footer from "./components/Footer";
+import SingleService from "./pages/services/sections/SingleService";
+import { ServiceProvider } from "./context/ServiceContext";
+import NotFound from "./pages/notFound/NotFound";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-        </Routes>
-        <Footer />
+        <ServiceProvider>
+          <Navbar />
+          <Routes>
+            <Route exact path="/home" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/services" element={<Services />} />
+            <Route exact path="/services/:id" element={<SingleService />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </ServiceProvider>
       </Router>
     </>
   );
