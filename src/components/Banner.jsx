@@ -5,7 +5,7 @@ const Banner = ({ children, bgPath }) => {
         background: `url(${bgPath}) center center no-repeat`,
         backgroundSize: "cover",
       }}
-      className="h-[60vh] flex items-center justify-center banner relative  "
+      className="h-[60vh] flex items-center justify-center banner relative bg-fixed  "
     >
       {children}
     </div>

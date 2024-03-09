@@ -1,6 +1,9 @@
 .parent:hover .child {
   background-color: #fff;
 }
+.parent:hover .child2 {
+  color: #fff;
+}
 .parent:hover .children {
   background-color: #fff;
   transition: ease 0.3s;
@@ -9,7 +12,8 @@
   transition: ease 0.3s;
   color: #fff;
 }
-.child {
+.child,
+.parent {
   transition: all ease 100ms;
 }
 .swiper-pagination-bullet {
