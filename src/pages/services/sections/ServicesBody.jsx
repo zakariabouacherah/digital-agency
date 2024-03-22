@@ -18,7 +18,6 @@ const ServicesBody = () => {
   // console.log(services);
   const handleServiceClick = (service) => {
     setSelectedService(service);
-    console.log(service);
   };
   return (
     <div className="flex flex-col gap-6 px-8 md:px-16 lg:px-32 xl:px-36">
