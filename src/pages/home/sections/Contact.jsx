@@ -1,6 +1,7 @@
 import Heading from "../../../components/Heading";
 import Input from "../../../components/Input";
 import Button from "../../../components/Button";
+import svgContact from "../../../assets/images/contact.svg";
 
 const Contact = () => {
   return (
@@ -10,11 +11,7 @@ const Contact = () => {
       </div>
       <div className="flex flex-col gap-4 md:gap-8 md:flex-row">
         <div className="w-full md:w-[50%] flex items-center justify-center ">
-          <img
-            src="../../../public/images/contact.svg"
-            width="400px"
-            alt="contact-svg"
-          />
+          <img src={svgContact} width="400px" alt="contact-svg" />
         </div>
         <form className="flex flex-col gap-5 w-full md:w-[50%]">
           <div className="grid grid-cols-none md:grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-4">

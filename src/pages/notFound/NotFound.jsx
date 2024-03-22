@@ -14,7 +14,7 @@ const NotFound = () => {
           </p>
           <p>
             Go back to the &nbsp;
-            <Link className="underline" to="/home">
+            <Link className="underline" to="/">
               Home page
             </Link>
             .

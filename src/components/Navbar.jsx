@@ -35,7 +35,7 @@ const Navbar = () => {
           : "bg-transparent absolute "
       }`}
     >
-      <Link to="/home" className="w-[200px] z-20 ">
+      <Link to="/" className="w-[200px] z-20 ">
         <img
           src={Logo}
           alt="datadriven"
