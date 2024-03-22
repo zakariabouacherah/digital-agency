@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import notFound from "../../assets/images/not-found.svg";
 
 const NotFound = () => {
   return (
@@ -19,11 +20,7 @@ const NotFound = () => {
             .
           </p>
         </div>
-        <img
-          src="../../../public/images/not-found.svg"
-          alt="404"
-          className="w-[200px] md:w-[400px] "
-        />
+        <img src={notFound} alt="404" className="w-[200px] md:w-[400px] " />
       </div>
     </>
   );

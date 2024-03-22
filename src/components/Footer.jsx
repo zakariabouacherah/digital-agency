@@ -6,7 +6,7 @@ import {
   TbBrandLinkedin,
   TbBrandInstagram,
 } from "react-icons/tb";
-import { useEffect } from "react";
+import logo from "../assets/images/logo.png";
 
 const Footer = () => {
   const smStyle =
@@ -17,12 +17,7 @@ const Footer = () => {
       <footer className={` px-8 md:px-16 lg:px-32 bg-[#fff2] -mt-16 pt-8 pb-6`}>
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="lg:w-[50%] ">
-            <img
-              src="../../../public/images/logo.png"
-              alt="logo"
-              width="200px"
-              className="mb-4"
-            />
+            <img src={logo} alt="logo" width="200px" className="mb-4" />
             <p className="text-sm text-gray-100">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptates error veniam sit enim! Est!

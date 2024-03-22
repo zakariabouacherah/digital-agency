@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 const Br = ({ vertical }) => {
-  // const [vertical, setVertical] = useState(false)
   return (
     <div
       className={`flex items-center  gap-1  opacity-80 ${

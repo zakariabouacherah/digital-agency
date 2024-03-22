@@ -1,21 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import StatsItem from "../../../components/StatsItems";
 import ScrollTrigger from "react-scroll-trigger";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Stats = () => {
   const [counterOn, setCounterOn] = useState(false);
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+
   return (
-    <div
-      data-aos="fade-up"
-      className="bg-gradient-to-br   from-[#fff1] to-[#fff2] p-6 rounded-md flex flex-col lg:flex-row lg:items-center gap-4 my-8 mx-8 md:mx-16 lg:mx-32"
-    >
+    <div className="bg-gradient-to-br   from-[#fff1] to-[#fff2] p-6 rounded-md flex flex-col lg:flex-row lg:items-center gap-4 my-8 mx-8 md:mx-16 lg:mx-32">
       <div className="lg:w-[50%] lg:px-6 ">
         <div className="text-2xl font-bold mb-2">Why us?</div>
         <div className="text-sm font-light lg:w-[80%] ">

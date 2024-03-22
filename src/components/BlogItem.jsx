@@ -1,17 +1,6 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-
-const BlogItem = ({ date, title, imageUrl, delay }) => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+const BlogItem = ({ date, title, imageUrl }) => {
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-delay={delay}
-      className="flex flex-col items-center overflow-hidden cursor-pointer"
-    >
+    <div className="flex flex-col items-center overflow-hidden cursor-pointer">
       <div className="w-full h-[300px] z-0 overflow-hidden">
         <img
           src={imageUrl}
@@ -26,8 +15,7 @@ const BlogItem = ({ date, title, imageUrl, delay }) => {
         </div>
         <div className="text-lg font-bold"> {title} </div>
         <div className="text-xs font-thin text-[#ff5f1f] cursor-pointer hover:underline">
-          {" "}
-          READ MORE{" "}
+          READ MORE
         </div>
       </div>
     </div>

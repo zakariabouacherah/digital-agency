@@ -1,30 +1,20 @@
 import Banner from "../../../components/Banner";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
 import { useService } from "../../../context/ServiceContext";
 import Separation from "../../../components/Separation";
 import { TbChevronRight } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import bgBanner from "../../../assets/images/banner_bg1.jpg";
 
 const SingleService = () => {
   const { selectedService } = useService();
-  console.log(selectedService);
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  // console.log(selectedService);
 
   return (
     <div className="min-h-screen">
       {selectedService && (
         <>
-          <Banner bgPath={"../../../public/images/banner_bg1.jpg"}>
-            <h1
-              data-aos="fade-up"
-              className="text-4xl md:text-6xl z-10 flex items-center flex-col gap-4"
-            >
+          <Banner bgPath={bgBanner}>
+            <h1 className="text-4xl md:text-6xl z-10 flex items-center flex-col gap-4">
               {selectedService.title}
             </h1>
           </Banner>

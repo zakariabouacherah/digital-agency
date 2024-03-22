@@ -7,6 +7,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+import img from "../../../assets/images/testimony1.png";
 
 const Testimony = () => {
   const commentaires = [
@@ -68,7 +69,7 @@ const Testimony = () => {
         <div className="relative w-[80%] lg:w-[50%] ">
           <div className="relative w-full">
             <img
-              src="../../../public/images/testimony1.png"
+              src={img}
               alt="testimony"
               width={600}
               className=" h-full w-full object-cover"

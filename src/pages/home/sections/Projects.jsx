@@ -5,36 +5,42 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import ProjectItem from "../../../components/ProjectItem";
+import project1 from "../../../assets/images/project1.jpeg";
+import project2 from "../../../assets/images/project2.jpeg";
+import project3 from "../../../assets/images/project3.jpeg";
+import project4 from "../../../assets/images/project4.jpeg";
+import project5 from "../../../assets/images/project5.jpeg";
+import project6 from "../../../assets/images/project6.jpeg";
 
 const Projects = () => {
   const projects = [
     {
-      imagePath: "../../../public/images/project1.jpeg",
+      imagePath: project1,
       secteur: "Development",
       service: "Web App / Mobile App",
     },
     {
-      imagePath: "../../../public/images/project2.jpeg",
+      imagePath: project2,
       secteur: "Development",
       service: "Web App / Mobile App",
     },
     {
-      imagePath: "../../../public/images/project3.jpeg",
+      imagePath: project3,
       secteur: "Development",
       service: "Web App / Mobile App",
     },
     {
-      imagePath: "../../../public/images/project4.jpeg",
+      imagePath: project4,
       secteur: "Development",
       service: "Web App / Mobile App",
     },
     {
-      imagePath: "../../../public/images/project5.jpeg",
+      imagePath: project5,
       secteur: "Development",
       service: "Web App / Mobile App",
     },
     {
-      imagePath: "../../../public/images/project6.jpeg",
+      imagePath: project6,
       secteur: "Development",
       service: "Web App / Mobile App",
     },

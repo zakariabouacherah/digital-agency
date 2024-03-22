@@ -4,6 +4,7 @@ import { TypewriterEffect } from "../../../components/ui/typewriter-effect";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import heroBg from "../../../assets/images/heroSectionBg.png";
 
 const Hero = () => {
   const words = [
@@ -29,7 +30,7 @@ const Hero = () => {
       <div
         className="h-[70vh] h-max-screen bg-fixed flex bg-contain xl:bg-cover bg-no-repeat bg-right lg:bg-center items-center lg:justify-start justify-center px-8 md:px-16 lg:px-32"
         style={{
-          backgroundImage: 'url("../../../public/images/heroSectionBg.png")',
+          backgroundImage: `url(${heroBg})`,
         }}
       >
         <div

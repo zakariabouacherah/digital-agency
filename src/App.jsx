@@ -16,7 +16,7 @@ function App() {
         <ServiceProvider>
           <Navbar />
           <Routes>
-            <Route exact path="/home" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/services" element={<Services />} />
             <Route exact path="/services/:id" element={<SingleService />} />

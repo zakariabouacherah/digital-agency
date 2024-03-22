@@ -2,6 +2,8 @@ import Heading from "../../../components/Heading";
 import Button from "../../../components/Button";
 import { SlBadge } from "react-icons/sl";
 import { FaArrowRight } from "react-icons/fa6";
+import signature from "../../../assets/images/signature.png";
+import aboutImage from "../../../assets/images/aboutImage.png";
 
 const AboutSection = () => {
   return (
@@ -45,13 +47,13 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="w-[50%] ">
-            <img src="../../../public/images/signature.png" alt="signature" />
+            <img src={signature} alt="signature" />
           </div>
         </div>
         <div className="relative w-[80%] lg:w-[50%] ">
           <div className="relative w-full">
             <img
-              src="../../../public/images/aboutImage.png"
+              src={aboutImage}
               alt="about us"
               width={600}
               className=" h-full object-cover"

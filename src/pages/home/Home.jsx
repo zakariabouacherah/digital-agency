@@ -22,46 +22,39 @@ const Home = () => {
     <>
       <Hero />
       <HeroBottom />
-      <div data-aos="fade-up">
-        <Separation />
-      </div>
-      <div data-aos="fade-up">
+      <Separation />
+
+      <div className="fade-up">
         <AboutSection />
       </div>
-      <div data-aos="fade-up">
-        <Separation />
-      </div>
-      <div data-aos="fade-up">
+      <Separation />
+
+      <div className="fade-up">
         <ServicesSection />
       </div>
-      <div data-aos="fade-up">
-        <Separation />
-      </div>
-      <div data-aos="fade-up">
+      <Separation />
+
+      <div className="fade-up">
         <Projects />
       </div>
-      <div data-aos="fade-up">
-        <Separation />
-      </div>
-      <div data-aos="fade-up">
+      <Separation />
+      <div className="fade-up">
         <Testimony />
       </div>
-      <div data-aos="fade-up">
+      <div className="fade-up">
         <Partners />
       </div>
-      <div data-aos="fade-up">
+      <div className="fade-up">
         <Team withoutButton />
       </div>
-      <div data-aos="fade-up">
+      <div className="fade-up">
         <Newsletter />
       </div>
-      <div data-aos="fade-up">
+      <div className="fade-up">
         <BlogSection />
       </div>
-      <div data-aos="fade-up">
-        <Separation />
-      </div>
-      <div data-aos="fade-up">
+      <Separation />
+      <div className="fade-up">
         <Contact />
       </div>
       <Separation />
